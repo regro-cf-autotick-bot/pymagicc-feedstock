@@ -1,5 +1,5 @@
 {% set name = "pymagicc" %}
-{% set version = "2.0.0b14" %}
+{% set version = "2.0.0rc1" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9e13caa4e2e0b54d9ea4a4d9a1d78941b9dc73a3b50e52fd3eaf80241668d337
+  sha256: 4fbb9cce72f56fbcf865e026803e49825ef23d12a15a116b5cb156532d887cb4
 
 build:
   number: 0
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/openclimatedata/pymagicc
-  license: AGPL-3.0 AND CC-BY-NC-SA-3.0
+  license: AGPL-3.0-only AND CC-BY-NC-SA-3.0
   license_family: AGPL
   license_file: 
       - LICENSE
