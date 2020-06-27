@@ -3,7 +3,7 @@ About pymagicc
 
 Home: https://github.com/openclimatedata/pymagicc
 
-Package license: AGPL-3.0 AND CC-BY-NC-SA-3.0
+Package license: AGPL-3.0-only AND CC-BY-NC-SA-3.0
 
 Feedstock license: BSD 3-Clause
 
