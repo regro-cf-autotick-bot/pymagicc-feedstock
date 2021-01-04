@@ -1,5 +1,5 @@
 {% set name = "pymagicc" %}
-{% set version = "2.0.0rc5" %}
+{% set version = "2.0.0rc10" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3aa2783d5f0747b5e9e8ed5a0e717d73f8523b66d2e24a71058e9ee322429806
+  sha256: ea7b9a42db2da9941f2b16954f550be67ece3acf967dcb6fcb63b52834372af4
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - pandas-datapackage-reader
     - f90nml
     - PyYAML
-    - scmdata >=0.6.3
+    - scmdata >=0.7.5
 
 test:
   imports:
