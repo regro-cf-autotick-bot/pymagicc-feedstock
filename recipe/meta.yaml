@@ -1,18 +1,18 @@
 {% set name = "pymagicc" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.1" %}
 
 package:
-  name: "{{ name|lower }}"
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 618dadba92e500736d4d844fe3de9ccd095f2b3c2e8b0c07664d1cb0f616dbae
+  sha256: 7ffd04aa4c4ad2a1ab3e7caf93fe2c64da09afb348696ea7a71be273cbb9b4d8
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
 
 requirements:
   host:
@@ -37,8 +37,8 @@ about:
   license: BSD-3-Clause AND CC-BY-NC-SA-3.0
   license_family: BSD
   license_file:
-      - LICENSE
-      - pymagicc/MAGICC6/License_MAGICC6Executable.txt
+    - LICENSE
+    - pymagicc/MAGICC6/License_MAGICC6Executable.txt
   summary: Python wrapper for the simple climate model MAGICC
   doc_url: https://pymagicc.readthedocs.io/en/latest/
   dev_url: https://github.com/openscm/pymagicc
