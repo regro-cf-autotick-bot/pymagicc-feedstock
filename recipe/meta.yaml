@@ -1,5 +1,5 @@
 {% set name = "pymagicc" %}
-{% set version = "2.1.1" %}
+{% set version = "2.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7ffd04aa4c4ad2a1ab3e7caf93fe2c64da09afb348696ea7a71be273cbb9b4d8
+  sha256: c7fefcf0446b23865a7912cd7ac5166a5c6447d9c26735b822fa5795ee2f52ab
 
 build:
   number: 0
