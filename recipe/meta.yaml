@@ -1,5 +1,5 @@
 {% set name = "pymagicc" %}
-{% set version = "2.1.3" %}
+{% set version = "2.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c7fefcf0446b23865a7912cd7ac5166a5c6447d9c26735b822fa5795ee2f52ab
+  sha256: 30b8fef0694a034ee2011bd349a32668d1d543c5b3d03bafec0d137bef8cb772
 
 build:
   number: 0
@@ -15,15 +15,23 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
 
 requirements:
+  build:
+    - pip
+    - python >=3.9
+    - versioneer
+    
   host:
     - pip
-    - python >=3.6
+    - python >=3.9
+    - versioneer
+    
   run:
-    - python >=3.6
+    - python >=3.9
     - pandas-datapackage-reader
     - f90nml
     - PyYAML
-    - scmdata >=0.7.5
+    - scmdata
+    - pandas
 
 test:
   imports:
