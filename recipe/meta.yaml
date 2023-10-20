@@ -15,15 +15,23 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
 
 requirements:
+  build:
+    - pip
+    - python >=3.9
+    - versioneer
+    
   host:
     - pip
-    - python >=3.6
+    - python >=3.9
+    - versioneer
+    
   run:
-    - python >=3.6
+    - python >=3.9
     - pandas-datapackage-reader
     - f90nml
     - PyYAML
-    - scmdata >=0.7.5
+    - scmdata
+    - pandas
 
 test:
   imports:
