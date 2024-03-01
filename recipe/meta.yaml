@@ -1,5 +1,5 @@
 {% set name = "pymagicc" %}
-{% set version = "2.1.4" %}
+{% set version = "2.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 30b8fef0694a034ee2011bd349a32668d1d543c5b3d03bafec0d137bef8cb772
+  sha256: 689359bf39f40cf3e7f6ed7ef411b0b26e40e79308839a5ee15cb2575e760434
 
 build:
   number: 0
@@ -19,12 +19,12 @@ requirements:
     - pip
     - python >=3.9
     - versioneer
-    
+
   host:
     - pip
     - python >=3.9
     - versioneer
-    
+
   run:
     - python >=3.9
     - pandas-datapackage-reader
